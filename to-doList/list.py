@@ -11,7 +11,7 @@ def load_tasks():
                 line = line.strip()
                 if line:  # Only process non-empty lines
                     parts = line.split(" | ")
-                    print(parts)
+                    # print(parts)
                     if len(parts) == 3:  # Ensure the line has exactly 3 values
                         task, due_date, done_str = parts
                         done = True if done_str == "True" else False
